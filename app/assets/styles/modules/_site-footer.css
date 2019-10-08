@@ -2,36 +2,31 @@
   margin-top: 20px;
   background: black;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__logo {
     width: 35%;
+    height: 30%;
     display: inline-block;
     margin: 20px 0 15px 15px;
-  }
-
-  &__right {
-    margin-top: 5px;
-    position: absolute;
-    right: 3px;
-    display: inline-block;
   }
 
   &__cta {
     color: $mainOffWhite;
     background: $mainBlue;
-    display: block;
-    border-radius: 5px;
-    margin: 0 auto 3px;
-    width: 80%;
-    text-align: center;
-  }
-
-  &__payments {
-    width: 100%;
     display: inline-block;
+    border-radius: 5px;
+    margin: 20px 10px 0;
+    width: 35%;
+    height: 30%;
+    text-align: center;
+    position: ;
+    right: 3px;
+    bottom: 1px;
   }
 
   &__copyright {
