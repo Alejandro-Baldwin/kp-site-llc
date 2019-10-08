@@ -1,17 +1,37 @@
 .example {
   text-align: center;
   width: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
   &__item {
     width: 100%;
+
+    @mixin atMedium {
+      width: 45%;
+    }
   }
 
   &__heading {
-    margin-top: 25px;
+    margin: 25px auto 0;
     text-align: center;
     color: $mainBlue;
     font-size: 1.56rem;
     margin-bottom: 15px;
+
+    @mixin atMedium {
+      max-width: 500px;
+    }
+
+    @mixin atLarge {
+      font-size: 2rem;
+    }
+
+    @mixin atLarger {
+      max-width: none;
+    }
   }
 
   &__img {
@@ -20,7 +40,7 @@
     vertical-align: center;
     width: 100%;
     margin: 0 auto 5px;
-    background: $mainGrey
+    background: $mainGrey;
   }
 
   &__text {

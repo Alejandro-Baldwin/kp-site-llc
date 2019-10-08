@@ -8,14 +8,16 @@
   background-color: black;
   overflow: hidden;
 
+
   &__logo {
-    margin-top: 5px;
+    margin: 5px auto 0;
+    display: inline-block;
+    text-align: center;
 
     &--img {
-      margin-top: 5px;
-      margin-left: 5px;
-      margin-bottom: 5px;
-      width: 30%;
+      display: inline-block;
+      margin: 5px auto 5px;
+      width: 50%;
     }
   }
   
@@ -38,13 +40,11 @@
 
   &__menu-icon {
     cursor: pointer;
-    z-index: 5;
     width: 22px;
     height: 19px;
     position: absolute;
-    z-index: 10;
     transform: scale(1.2);
-    top: 11px;
+    top: 18px;
     right: 15px;
 
     &::before {
