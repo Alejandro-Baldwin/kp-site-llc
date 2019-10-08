@@ -1,0 +1,39 @@
+.example {
+  text-align: center;
+  width: 100%;
+
+  &__item {
+    width: 100%;
+  }
+
+  &__heading {
+    margin-top: 25px;
+    text-align: center;
+    color: $mainBlue;
+    font-size: 1.56rem;
+    margin-bottom: 15px;
+  }
+
+  &__img {
+    display: block;
+    vertical-align: center;
+    width: 80%;
+    margin: 0 auto 5px;
+    border-radius: 8px;
+  }
+
+  &__logo {
+    width: 80%;
+    display: block;
+    margin: 5px auto 0;
+    border-radius: 10px;
+  }
+
+  &__text {
+    margin: 15px auto 0;
+    font-family: sans-serif;
+    width: 75%;
+    font-size: 20px;
+  }
+
+}

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  width:100%;
+  height: auto;
+}
+
+html {
+  background-color: $mainOffWhite;
+}
+
+a {
+  color: $mainOffWhite;
+  text-decoration: none;
+}
+
+body {
+  background: #f3f3f3;
+}

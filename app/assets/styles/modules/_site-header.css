@@ -1,0 +1,132 @@
+.site-header {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  overflow: hidden;
+
+  &__logo {
+    margin-top: 5px;
+
+    &--img {
+      margin-top: 5px;
+      margin-left: 5px;
+      margin-bottom: 5px;
+      width: 30%;
+    }
+  }
+  
+
+  &__menu-content {
+    transition: all .5s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    background-color: $mainOffBlack;
+    overflow: hidden;
+  }
+
+  &__menu-content--is-visible {
+    max-height: 600px;
+    opacity: 1;
+  }
+
+  &__menu-icon {
+    cursor: pointer;
+    z-index: 5;
+    width: 22px;
+    height: 19px;
+    position: absolute;
+    z-index: 10;
+    transform: scale(1.2);
+    top: 11px;
+    right: 15px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 22px;
+        height: 3px;
+        background-color: $mainOffWhite;
+        transform-origin: 0 0;
+        transition: transform .3s ease-out;
+    }
+
+    &__middle {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 22px;
+        height: 3px;
+        background-color: $mainOffWhite;
+        transition: all .3s ease-out;
+        transform-origin: 0 50%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 22px;
+        height: 3px;
+        background-color: $mainOffWhite;
+        transform-origin: 0 100%;
+        transition: transform .3s ease-out;
+    }
+
+    @mixin atMedium {
+        display: none;
+    }
+  }
+
+  &__menu-icon--close-x {
+        
+    &::before {
+        transform: rotate(45deg) scalex(1.25);
+    }
+
+    &::after {
+        transform: rotate(-45deg) scalex(1.25) translateY(2px) translateX(-1px);
+    }
+
+    .site-header__menu-icon__middle {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+  }
+
+  &__links {
+    transform-origin: 0 0;
+    background-color: rgba($mainDarkGrey, .6);
+    list-style: none;
+    height: 40px;
+    display: flex;
+    justify-items: space-around;
+    transition: all .3s ease-out;
+  }
+
+  &__links:hover {
+    height: 60px;
+    background-color: $mainGrey;
+  }
+
+
+  & a {
+    transform: scaleY(0);
+    flex: 1;
+    position: relative;
+    font-size: 1.25rem;
+    height: fit-content;
+    top: 50%;
+    transform: translatey(-50%)
+  }
+
+}
