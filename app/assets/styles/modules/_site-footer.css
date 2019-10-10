@@ -18,17 +18,24 @@
   &__cta {
 
     cursor: pointer;
+    padding: 5px 0;
+    font-size: 1rem;
     color: $mainOffWhite;
     background: $mainBlue;
     display: inline-block;
     border-radius: 5px;
-    margin: auto 10px auto;
+    margin: auto 10px auto 0;
     width: 35%;
     height: 30%;
     text-align: center;
     position: ;
-    right: 3px;
     bottom: 1px;
+
+    @mixin atSmall {
+      font-size: 1.25rem;
+      width: 25%;
+      margin-right: 5%;
+    }
   }
 
   &__copyright {
