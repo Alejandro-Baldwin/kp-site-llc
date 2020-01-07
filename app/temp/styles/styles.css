@@ -37,11 +37,10 @@ body {
   }
 .site-header__logo {
     width: 50%;
-    margin: 0 auto 0;
+    margin: 5px auto 0;
     display: inline-block;
     text-align: center;
     position: relative;
-    top: 15px;
     z-index: 9999999;
   }
 @media (min-width: 800px) {
@@ -52,13 +51,11 @@ body {
       margin: 5px 
   }
   }
-.site-header__logo--img {
-      position: relative;
-      z-index: 99999999999;
-      display: inline-block;
-      margin: 0 auto;
-      width: 100%;
-    }
+.site-header__logo__text {
+    color: #FFF;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+  }
 .site-header__menu-content {
     transition: all .5s ease-in-out;
     max-height: 0;
@@ -89,13 +86,14 @@ body {
     margin-top: 20px;
   }
 .site-header__menu-icon {
+    margin-top: 5px;
     box-sizing: border-box;
     cursor: pointer;
     width: 26px;
     height: 19px;
     position: absolute;
     transform: scale(1.2);
-    top: 22px;
+    top: 5px;
     right: 12px;
   }
 @media (min-width: 530px) {
@@ -106,19 +104,19 @@ body {
   }
   }
 .site-header__menu-icon::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 22px;
-        height: 3px;
-        background-color: #F2F2F2;
-        transform-origin: 0 0;
-        transition: transform .3s ease-out;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 22px;
+      height: 3px;
+      background-color: #F2F2F2;
+      transform-origin: 0 0;
+      transition: transform .3s ease-out;
     }
 @media (min-width: 530px) {
 .site-header__menu-icon::before {
-          width: 30px
+        width: 30px
     }
   }
 .site-header__menu-icon__middle {
@@ -279,9 +277,8 @@ body {
     display: flex;
     justify-content: space-between;
   }
-.site-footer__logo {
-    width: 35%;
-    height: 30%;
+.site-footer__logo-text {
+    color: #FFF;
     display: inline-block;
     margin: 20px 0 15px 15px;
   }
