@@ -62,7 +62,7 @@ function optimizeImages() {
 //5. Compresses the CSS and JS files, add version and places them in the Dist folder
 
 function usemin() {
-    return gulp.src("./app/index.html")
+    return gulp.src("./app/*")
         .pipe(usemins({
             css: [function() {return rev()}, function() {return cssnano()}],
             js: [function() {return rev()}, function() {return uglify()}]
