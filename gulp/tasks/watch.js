@@ -13,7 +13,7 @@ function watch() {
     }
   });
 
-  gulp.watch('./app/index.html').on('change', browserSync.reload);
+  gulp.watch('./app/*.html').on('change', browserSync.reload);
   gulp.watch('./app/assets/styles/**/*.css').on('change', cssInject);
   gulp.watch('./app/assets/scripts/**/*.js').on('change', scriptsRefresh);
 };

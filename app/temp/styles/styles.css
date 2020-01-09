@@ -18,6 +18,9 @@ a {
 body {
   background: #f3f3f3;
 }
+textarea {
+  resize: none;
+}
 .site-header {
   position: relative;
   width: 100%;
@@ -502,3 +505,58 @@ body {
   position: relative;
   z-index: 0;
 }
+.contact-form {
+    margin-top: 45px;
+    width: 100%;
+
+
+}
+.contact-form__input {
+        margin-right: 10px;
+        -webkit-box-flex: 1;
+                flex: 1;
+        border: 1px #72b3e7 solid;
+        height: 25px;
+        display: inline-block;
+    }
+.contact-form__input--message {
+        display: block;
+        margin-right: 10px;
+        -webkit-box-flex: 1;
+                flex: 1;
+        border: 1px #72b3e7 solid;
+        height: 25px;
+        display: inline-block;
+        height: 200px;
+    }
+.contact-form__text {
+        margin: 0 10px 0;
+        width: content;
+        display: inline-block;
+    }
+.contact-form__container {
+        width: 100%;
+        text-align: center;
+    }
+.contact-form__container__form {
+        width: 100%;
+
+    }
+.contact-form__container__form__section {
+            margin-bottom: 20px;
+            display: -webkit-inline-box;
+            display: inline-flex;
+            -webkit-box-pack: justify;
+                    justify-content: space-between;
+            width: 100%;
+        }
+.contact-form__submit {
+        margin-top: 25px;
+        width:70%;
+        padding: 10px 0;
+        font-size: 2em;
+        background-color: #72b3e7;
+        border-radius: 15px;
+        border: 2px black;
+        cursor: pointer;
+    }

@@ -34,7 +34,8 @@ function deleteDistFolder() {
 function copyGeneralFiles(callback) {
     const pathsToCopy = [
         './app/**/*',
-        '!./app/index.html',
+        '!./app/**',
+        '!./app/assets/php/**',
         '!./app/assets/images/**',
         '!./app/assets/styles/**',
         '!./app/assets/scripts/**',
